@@ -523,3 +523,8 @@ min-width: 300px}
 .pagination > li:first-child > span {
     margin-left: 0
 }
+
+.capsule {
+    padding:20px;
+
+}

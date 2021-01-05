@@ -541,6 +541,7 @@ button {
     color: #000000 !important;
     padding-left: 14px;
     font-weight: lighter !important;
+    margin: 5px 0px 5px 0px
 }
 
 .detail_3{
@@ -548,4 +549,5 @@ button {
     color: #000000 !important;
     padding-left: 14px;
     font-weight: lighter !important;
+    margin: 5px 0px 5px 0px
 }

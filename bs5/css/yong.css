@@ -1,0 +1,525 @@
+/**콜아웃이랑 관련된 분 콜아웃+태그로 새 태그 만들기 가능**/
+.callout-info {
+    color: aqua;
+}
+
+.callout-yong {
+    border: 1px solid red;
+    background-color: #999999;
+}
+
+html,
+body,
+button {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+button {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.box-roulette {
+    position: relative;
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #ccc;
+    border-radius: 50%;
+    background: #ccc;
+    overflow: hidden;
+}
+
+.box-roulette .markers {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-left: -25px;
+    width: 0;
+    height: 0;
+    border: 25px solid #fff;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    z-index: 9999;
+}
+
+.box-roulette .roulette {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-roulette .item {
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    transform-origin: 0 100%;
+}
+
+.box-roulette .label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #fff;
+    white-space: nowrap;
+    transform-origin: 0 0;
+}
+
+.box-roulette .label .text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+#btn-start {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 50px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.yong {
+    text-align: center;
+    border: 1px solid #777777;
+    background-color: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text {
+    margin-top: 20px;
+    border: none;
+    background-color: antiquewhite;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.full {
+    width: 100%;
+}
+
+.yongyong {
+    background-color: #333333;
+    padding: 1.2rem 1rem !important;
+}
+
+.wheretogo {
+    color: white;
+
+    text-decoration-line: none;
+}
+
+.navimg {
+    width: 10%
+}
+
+.navimg_2 {
+    width: 4%;
+}
+
+.navimg_10 {
+    width: 10%;
+}
+
+
+.pr5 {
+    padding-right: 5rem;
+}
+
+.nonefont {
+    letter-spacing: 0.02rem;
+    text-decoration-line: none;
+    color: #ffffff;
+    font-size: 0.9rem;
+}
+
+.floatleft {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.pl200 {
+    padding-left: 200px;
+}
+
+.bg_gray {
+    background-color: #d6d6d9;
+}
+
+.som {
+    /*border: 1px solid #999999;sS*/
+    text-align: center;
+    font-size: 12px;
+    background-color: #999999;
+    padding: 10px 0px 10px 0px;
+    /*row열 날리면서 삭제*/
+    /*margin-top: 20px;*/
+    font-weight: bold;
+    border-radius: 5px
+}
+
+.som_2 {
+    /*border: 1px solid #999999;sS*/
+    font-size: 12px;
+    background-color: #848484;
+    padding: 10px 0px 10px 0px;
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 5px
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 5px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+.yong_sample {
+    padding: 20px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 1700PX;
+}
+
+.path > span {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(/images/ico_16_arrow_right_n.svg) no-repeat center center;
+    text-indent: -9999px;
+    margin-top: 1px;
+}
+
+/*아티클_탑_article_top*/
+
+.article_top {
+    position: absolute;
+    margin: 18px 0 0 0px;
+    width: 1590px;
+    height: 203px;
+    background-color: #f6f7fb;
+}
+
+.article_top .article_box {
+    padding: 20px 24px;
+    display: flex;
+}
+
+.article_top-button > h5 {
+    font-size: 13px;
+    color: #898989;
+    font-weight: 300;
+    margin: 0 0 4px 0;
+}
+
+.article_top-button.calen > .combo-button {
+    width: 200px;
+    margin-right: 0;
+}
+
+.article_top-button.name > .combo-button {
+    width: 70px;
+}
+
+.article_top-button.name > input {
+    position: relative;
+    right: 12px;
+    width: 180px;
+    height: 34px;
+    border: 1px solid #d8d8d8;
+    padding: 0 0 0 12px;
+}
+
+.article_top-button.name > input::placeholder {
+    color: #bfbfbf;
+}
+
+.article_top-button.search > h5 {
+    text-indent: -9999px;
+}
+
+.article_top-button.search > .combo-button {
+    width: 166px;
+    padding: 0;
+    text-align: center;
+    background-color: #333333;
+    border: 1px solid #333333;
+    color: #ffcc33;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.article_top-button .date {
+    width: 34px;
+    height: 34px;
+    text-indent: -9999px;
+    margin-right: 12px;
+    background: url(/images/ico_20_calendar_n.svg) no-repeat center center;
+    background-color: #fff;
+    border: 1px solid #969696;
+}
+
+.top {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.row .col-12 .top {
+    margin: 0px 0 0 0px;
+    width: 100px;
+    font-size: 24px;
+    color: #333333;
+    font-weight: 600;
+    background: url(/images/ico_24_title_n.svg) no-repeat right center;
+}
+
+/*아티클_탑_article_bottom*/
+
+
+.article_bottom {
+    position: absolute;
+    top: 490px;
+    width: 1590px;
+    height: 602px;
+    background-color: #f6f7fb;
+    margin: 0 0 0 0px;
+    padding: 28px 24px 0 24px;
+}
+
+.article_bottom .tit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article_bottom .tit-left > span {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    border: 1px solid #333333;
+    text-indent: -9999px;
+    background: url(/images/ico_24_filter_n.svg) no-repeat center center;
+}
+
+.article_bottom .tit-left > h6 {
+    position: relative;
+    top: 6px;
+    left: 7px;
+    display: inline-block;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.article_bottom .tit-right .combo-button.last {
+    margin-right: 0;
+}
+
+.npd {
+    padding: 0px !important;
+}
+
+.bd-links a {
+    color: #ffffff !important;
+    font-size: 14px;
+}
+
+.bd-links .active {
+
+    color: #fcba03 !important;
+}
+
+.button_tab {
+    position: relative;
+    margin: 20px 0 20px 0;
+}
+
+.button_tab button {
+    width: 90px;
+    height: 34px;
+    background-color: #9c9d9d;
+    color: #fff;
+    font-weight: 300;
+}
+
+.button_tab button.active {
+    background-color: #ffcc33;
+    color: #000;
+    font-weight: bold;
+}
+
+.button_tab button:nth-of-type(1) {
+    border-radius: 6px 0 0 6px;
+}
+
+.button_tab button:nth-of-type(2) {
+    position: absolute;
+    border-radius: 0 6px 6px 0;
+    font-weight: bold;
+}
+
+/*테이블코드*/
+
+.overflow{overflow: scroll;
+min-width: 300px}
+
+.tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+    min-width: 500px !important;
+    overflow: scroll !important;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg .tg-f8tv {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: top
+}
+
+.tg .tg-0lax {
+    text-align: center;
+    vertical-align: top
+}
+
+/* paging */
+.page-pagination {
+    text-align: center
+}
+
+.pagination {
+    margin: 24px 0;
+    display: inline-block;
+    overflow: hidden
+}
+
+.pagination > li {
+    float: left;
+}
+
+.pagination > li a {
+    display: inline-block;
+    color: #888;
+    border: 1px solid #fff;
+    margin: 0 3px;
+    height: 32px;
+    position: relative;
+    padding: 6px 12px;
+    line-height: 1.5;
+    background: transparent;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    border: 1px solid #e5e5e5;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #888888;
+}
+
+.pagination li a.btn_next {
+    background: url(../image/ico_16_arrow_right_n.svg) no-repeat 50% 50%;
+}
+
+.pagination li a.btn_nextD {
+    background: url(../image/ico_16_arrow_next_n.svg) no-repeat 50% 50%;
+}
+
+.pagination li a.btn_prev {
+    background: url(../image/ico_16_arrow_left_n.svg) no-repeat 50% 50%;
+}
+
+.pagination li a.btn_prevD {
+    background: url(../image/ico_16_arrow_prev_n.svg) no-repeat 50% 50%;
+}
+
+.pagination li a span {
+    display: none;
+}
+
+.pagination > li:nth-child(1) > a,
+.pagination > li:nth-child(1) > span,
+.pagination > li:nth-child(2) > a,
+.pagination > li:nth-child(2) > span,
+.pagination > li:nth-last-child(1) > a,
+.pagination > li:nth-last-child(1) > span,
+.pagination > li:nth-last-child(2) > a,
+.pagination > li:nth-last-child(2) > span {
+    border: 1px solid #e5e5e5;
+    width: 32px
+}
+
+/* 989898 */
+.pagination > .disabled > a {
+    border-color: #e5e5e5 !important;
+    color: #a1a1a1 !important
+}
+
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+    margin-left: 0
+}

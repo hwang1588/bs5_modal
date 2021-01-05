@@ -394,8 +394,10 @@ button {
 
 /*테이블코드*/
 
-.overflow{overflow: scroll;
-min-width: 300px}
+.overflow {
+    overflow: scroll;
+    min-width: 300px
+}
 
 .tg {
     border-collapse: collapse;
@@ -525,6 +527,18 @@ min-width: 300px}
 }
 
 .capsule {
-    padding:20px;
+    padding: 20px;
+}
 
+.detail {
+    font-size: 20px;
+    color: #000000 !important;
+    padding-left: 15px
+}
+
+.detail_2{
+    font-size: 15px;
+    color: #000000 !important;
+    padding-left: 14px;
+    font-weight: lighter !important;
 }

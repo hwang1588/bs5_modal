@@ -847,7 +847,7 @@ aside.popup .profile td:nth-of-type(1) {
 
 /* input */
 input {
-    width: 325px;
+    width: auto;
     height: 34px;
     background-color: #e9e9ec;
     border: 1px solid #e6e6e6;

@@ -213,6 +213,7 @@ button {
     height: 100%;
     margin: 0;
     background-color: #ffffff;
+    margin-bottom: 100px;
 }
 
 .path > span {
